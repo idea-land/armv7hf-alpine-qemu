@@ -1,3 +1,3 @@
 #!/bin/bash
 
-go build -ldflags "-w -s" resin-xbuild.go
+GOOS=linux GOARCH=amd64 go build -ldflags "-w -s" resin-xbuild.go

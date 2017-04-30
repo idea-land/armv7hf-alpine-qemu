@@ -12,7 +12,7 @@ func crossBuildStart() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = os.Link("/usr/bin/resin-xbuild", "/bin/sh")
+	err = os.Link("/usr/local/bin/resin-xbuild", "/bin/sh")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -30,7 +30,7 @@ func crossBuildEnd() {
 }
 
 func runShell() error {
-	cmd := exec.Command("/usr/bin/qemu-arm-static", append([]string{"-0", "/bin/sh", "/bin/sh"}, os.Args[1:]...)...)
+	cmd := exec.Command("/usr/local/bin/qemu-arm-static", append([]string{"-0", "/bin/sh", "/bin/sh"}, os.Args[1:]...)...)
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
