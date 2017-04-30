@@ -1,2 +1,4 @@
 Dockerfile
 LICENCE
+resin-xbuild.go
+build.sh
