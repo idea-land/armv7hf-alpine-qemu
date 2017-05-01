@@ -34,5 +34,5 @@ RUN ["cross-build-end"]
 
 ## License
 
-Copyright &copy; 2017 Resin.io &amp; Chris Schmich  
+Copyright &copy; 2017 Resin, Inc &amp; Chris Schmich  
 Apache 2.0 License. See [LICENCE](LICENCE) for details.
