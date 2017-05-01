@@ -1,4 +1,5 @@
 FROM armhf/alpine:3.5
+MAINTAINER Chris Schmich <schmch@gmail.com>
 
 ENV QEMU_EXECVE 1
 
