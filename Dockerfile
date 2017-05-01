@@ -3,7 +3,7 @@ MAINTAINER Chris Schmich <schmch@gmail.com>
 
 ENV QEMU_EXECVE 1
 
-COPY qemu-arm-static /usr/local/bin
-COPY resin-xbuild /usr/local/bin
+COPY qemu-arm-static /usr/bin
+COPY resin-xbuild /usr/bin
 
-RUN [ "/usr/local/bin/qemu-arm-static", "/bin/sh", "-c", "ln -s /usr/local/bin/resin-xbuild /usr/local/bin/cross-build-start; ln -s /usr/local/bin/resin-xbuild /usr/local/bin/cross-build-end; ln /bin/sh /bin/sh.real" ]
+RUN [ "/usr/bin/qemu-arm-static", "/bin/sh", "-c", "ln -s /usr/bin/resin-xbuild /usr/bin/cross-build-start; ln -s /usr/bin/resin-xbuild /usr/bin/cross-build-end; ln /bin/sh /bin/sh.real" ]
