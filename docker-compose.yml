@@ -1,0 +1,14 @@
+server:
+  build: .
+  cpu_shares: 512
+  mem_limit: 2G
+#  user: nobody
+#  user: default
+  user: root
+#  user: "100001"
+#  environment:
+#    - http_port=8080
+  ports:
+    - 8080:8080
+  volumes:
+    - /data:/h
