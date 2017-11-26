@@ -1,5 +1,6 @@
-FROM armhf/alpine:3.5
-MAINTAINER Chris Schmich <schmch@gmail.com>
+#FROM armhf/alpine:3.5
+FROM arm32v6/alpine
+#MAINTAINER Chris Schmich <schmch@gmail.com>
 
 ENV QEMU_EXECVE 1
 
